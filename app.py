@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-from hello.hello import Hello
+from pyexample.hello import Hello
 
 
 if __name__ == "__main__":

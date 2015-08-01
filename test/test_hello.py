@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
-from hello.hello import Hello
+from pyexample.hello import Hello
 
 
 class MainTest(unittest.TestCase):
@@ -11,3 +11,7 @@ class MainTest(unittest.TestCase):
 		returned = h.say_hello()
 		expected = "Greating from Hello class" 
 		self.assertEqual(returned, expected)	
+
+
+if __name__ == '__main__':
+	unittest.main()

@@ -3,7 +3,7 @@
 Python example project. Example of:
 
 * Entry point (`app.py`)
-* module (`hello`)
+* module (`pyexample`)
 * resource (`hello/data/letter.md`)
 * setuptools (`setup.py`)
 
