@@ -1,6 +1,11 @@
 # PyExample
 
-Python example project
+Python example project. Example of:
+
+* Entry point (`app.py`)
+* module (`hello`)
+* resource (`hello/data/letter.md`)
+* setuptools (`setup.py`)
 
 ## Run
 
