@@ -12,6 +12,13 @@ setup(
     # Requirements
     install_requires= [],
 
+    package_data = {
+        # If any package contains *.txt or *.rst files, include them:
+        #'': ['*.txt', '*.rst'],
+        # And include any *.msg files found in the 'hello' package, too:
+        'hello': ['data/*.md'],
+    },
+
     # About
     author='Ondřej Profant',
     author_email='ondrej.profant@gmal.com',
