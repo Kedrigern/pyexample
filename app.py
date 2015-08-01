@@ -15,5 +15,5 @@ if __name__ == "__main__":
 		print("Long letter from file:")
 		h.say_long()
 
-	if not os.path.exist("config.ini"):
+	if not os.path.exists("config.ini"):
 		print("Config file not found!")
