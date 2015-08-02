@@ -11,7 +11,7 @@ class Hello:
 		return ("Greating from %s class" % __class__.__name__)
 
 	def say_long(self):
-		path = __dir__ + '/data/letter.md'
+		path = os.path.join(__dir__, 'letter.md')
 		with open(path) as f:
 			print(f.read());
 

@@ -1,0 +1,4 @@
+include readme.md
+include DESCRIPTION.rst
+
+recursive-include resource/*

@@ -4,8 +4,10 @@ Python example project. Example of:
 
 * Entry point (`app.py`)
 * module (`pyexample`)
-* resource (`hello/data/letter.md`)
-* setuptools (`setup.py`)
+* module resource (`pyexample/letter.md`)
+* global resource (`resource/file.dat`, `resource/config.ini`)
+* setuptools (`setup.py`, `MANIFEST.in`)
+* unit tests via standard `unittest` module
 
 ## Run
 
@@ -43,14 +45,18 @@ And allow to run by command: `app.py`
 
 ```
 ├── app.py
-├── hello
+├── DESCRIPTION.rst
+├── MANIFEST.in
+├── pyexample
 │   ├── hello.py
-│   └── __init__.py
+│   ├── __init__.py
+│   └── letter.md
 ├── readme.md
+├── resource
+│   ├── config.ini
+│   └── file.dat
 ├── setup.py
 └── test
     ├── __init__.py
     └── test_hello.py
 ```
-
-
