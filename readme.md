@@ -41,6 +41,12 @@ Install app into:
 
 And allow to run by command: `app.py`
 
+## Links
+
+* [pypa/sampleproject](http://github.com/pypa/sampleproject)
+* [doc manifest](https://docs.python.org/3.4/distutils/sourcedist.html#specifying-the-files-to-distribute)
+* [Including non-Python files with setup.py](http://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py)
+
 ## File hiearchy
 
 ```
