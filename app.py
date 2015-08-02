@@ -10,7 +10,8 @@ def find_config():
 	con = 'config.ini'
 	for filename in [con, path.join('resource', con)]:
 		if path.exists(filename):
-                	configFound = True
+			print("Config found: ", filename)
+			configFound = True
 
 	if not configFound:
 		raise Exception()

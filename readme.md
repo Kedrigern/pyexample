@@ -30,14 +30,27 @@ python3 -m unittest
 ## Install
 
 ```
-sudo ./setup.py install
+sudo dnf install pip3
+sudo pip3 install git+https://github.com/Kedrigern/pyexample.git
 ```
 
-Install app into:
+### Virtualenv
+
+Virtual enviroment:
 
 ```
-/usr/lib/python3.4/site-packages/
+sudo dnf install pip3 python3-virtualenv.noarch
+sudo mkdir -p /opt/venv/pyexample
+sudo chown $USER /opt/venv/pyexample
+virtualenv-3.4 /opt/venv/pyexample
+source /opt/virtualenv/pyexample/bin/activate
+pip3 install git+https://github.com/Kedrigern/pyexample.git
+deactivate
 ```
+
+### System wide
+
+
 
 And allow to run by command: `app.py`
 
