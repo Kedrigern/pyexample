@@ -45,6 +45,7 @@ And allow to run by command: `app.py`
 
 * [pypa/sampleproject](http://github.com/pypa/sampleproject)
 * [doc manifest](https://docs.python.org/3.4/distutils/sourcedist.html#specifying-the-files-to-distribute)
+* [doc additional files](https://docs.python.org/3.4/distutils/setupscript.html#installing-additional-files)
 * [Including non-Python files with setup.py](http://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py)
 
 ## File hiearchy
