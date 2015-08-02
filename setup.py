@@ -17,11 +17,11 @@ setup(
     version='0.2.0',
     packages=find_packages(),
     scripts=['app.py'],
-    entry_points={
-        'console_scripts': [
-            'appos = app',
-        ]
-    },
+    #entry_points={
+    #    'console_scripts': [
+    #        'appos = app',
+    #    ]
+    #},
 
     # Requirements
     install_requires= [],
@@ -31,6 +31,7 @@ setup(
         #'': ['*.txt', '*.rst'],
         # And include any *.msg files found in the 'hello' package, too:
         '': ['resource/*'],
+	'pyexample': ['*.md', '*.dat']
     },
     extras_require={
         'dev': ['check-manifest'],
