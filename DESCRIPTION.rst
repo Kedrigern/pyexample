@@ -43,15 +43,23 @@ On Fedora package is installed into: `/usr/lib/python3.4/site-packages`
 and tree look:
 
 ``
-pyexample
-├── hello.py
-├── __init__.py
-├── __main__.py
-└── resources
-    ├── config.ini
+├── DESCRIPTION.rst
+├── MANIFEST.in
+├── pyexample
+│   ├── hello.py
+│   ├── __init__.py
+│   ├── __main__.py
+│   └── resources
+│       ├── config.ini
+│       ├── __init__.py
+│       ├── resource1.dat
+│       └── resource2.dat
+├── readme.md
+├── run
+├── setup.py
+└── test
     ├── __init__.py
-    ├── resource1.dat
-    └── resource2.dat
+    └── test_hello.py
 ``
 
 
@@ -66,4 +74,4 @@ virtualenv-3.4 /opt/venv/pyexample
 source /opt/virtualenv/pyexample/bin/activate
 pip3 install git+https://github.com/Kedrigern/pyexample.git
 deactivate
-``
+``.

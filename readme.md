@@ -47,17 +47,19 @@ python3 -m unittest
 ## File hiearchy
 
 ```
-├── app.py
 ├── DESCRIPTION.rst
 ├── MANIFEST.in
 ├── pyexample
 │   ├── hello.py
 │   ├── __init__.py
-│   └── letter.md
+│   ├── __main__.py
+│   └── resources
+│       ├── config.ini
+│       ├── __init__.py
+│       ├── resource1.dat
+│       └── resource2.dat
 ├── readme.md
-├── resource
-│   ├── config.ini
-│   └── file.dat
+├── run
 ├── setup.py
 └── test
     ├── __init__.py
