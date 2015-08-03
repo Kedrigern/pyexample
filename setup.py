@@ -31,13 +31,15 @@ setup(
         # If any package contains *.txt or *.rst files, include them:
         #'': ['*.txt', '*.rst'],
         # And include any *.msg files found in the 'hello' package, too:
-        '': ['resource/*'],
+        'pyexample-resources': ['*'],
 	'pyexample': ['*.md', '*.dat']
     },
-    data_files=[
-       ('resource', ['resource/letter.md']),
-       ('config', ['resource/config.ini'])
-    ],
+    # Global data files installed into sys.prefix 
+    # On Fedora 22 path is /usr and that sucks...
+    #data_files=[
+    #   ('resource', ['resource/letter.md']),
+    #   ('config', ['resource/config.ini'])
+    #],
     extras_require={
         'dev': ['check-manifest'],
         'test': ['coverage'],
