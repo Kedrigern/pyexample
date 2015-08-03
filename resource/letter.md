@@ -1,5 +1,0 @@
-
-Letter example
-==============
-
-Lorem ipsum

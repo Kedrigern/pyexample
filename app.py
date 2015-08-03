@@ -7,8 +7,9 @@ from pyexample.hello import Hello
 
 def find_config():
 	configFound = False
+	res = 'pyexample-resources'
 	con = 'config.ini'
-	for filename in [con, path.join('resource', con)]:
+	for filename in [con, path.join(res, con)]:
 		if path.exists(filename):
 			print("Config found: ", filename)
 			configFound = True
