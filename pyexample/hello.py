@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 
-import os
+from os import path
 
-__dir__ = os.path.realpath(os.path.dirname(__file__))
+__dir__ = path.realpath(path.dirname(__file__))
+__resource__ = path.join(__dir__, 'resources')
 
 
 class Hello:
-	
-	def say_hello(self):
-		return ("Greating from %s class" % __class__.__name__)
+    def say_hello(self):
+        return ("Greating from %s class" % __class__.__name__)
 
-	def say_long(self):
-		path = os.path.join(__dir__, 'letter.md')
-		with open(path) as f:
-			print(f.read());
+    def say_long(self):
+        file = path.join(__resource__, 'resource1.dat')
+        with open(file) as f:
+            print(f.read())
 
 
 if __name__ == '__main__':
-	h = Hello()
-	print('Run modul hello')
-	print(h.say_hello())
+    h = Hello()
+    print('Run modul hello')
+    print(h.say_hello())

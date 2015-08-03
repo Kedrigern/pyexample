@@ -4,28 +4,10 @@ Python example project. Example of:
 
 * Entry point (`app.py`)
 * module (`pyexample`)
-* module resource (`pyexample/letter.md`)
-* global resource (`resource/file.dat`, `resource/config.ini`)
+* module with resources (`pyexample/resources`)
 * setuptools (`setup.py`, `MANIFEST.in`)
 * unit tests via standard `unittest` module
 
-## Run
-
-```
-./app.py 
-```
-
-With any parametr output is quit different:
-
-```
-./app.py --foo
-```
-
-## Run tests
-
-```
-python3 -m unittest
-```
 
 ## Install
 
@@ -34,25 +16,26 @@ sudo dnf install pip3
 sudo pip3 install git+https://github.com/Kedrigern/pyexample.git
 ```
 
-### Virtualenv
+`dnf` is install software for Fedora. On other OS use another app. 
 
-Virtual enviroment:
+## Run
 
 ```
-sudo dnf install pip3 python3-virtualenv.noarch
-sudo mkdir -p /opt/venv/pyexample
-sudo chown $USER /opt/venv/pyexample
-virtualenv-3.4 /opt/venv/pyexample
-source /opt/virtualenv/pyexample/bin/activate
-pip3 install git+https://github.com/Kedrigern/pyexample.git
-deactivate
+pyexample
 ```
 
-### System wide
+With any parameter output is quit different:
 
+```
+pyexample --foo
+```
 
+## Run tests
 
-And allow to run by command: `app.py`
+```
+cd <git-repository-with-project>
+python3 -m unittest
+```
 
 ## Links
 
