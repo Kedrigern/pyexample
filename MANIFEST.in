@@ -2,8 +2,5 @@
 include readme.md
 include DESCRIPTION.rst
 
-# Global resources
-recursive-include resource/*dat
-
 # Module resources
 include pyexample/letter.md
