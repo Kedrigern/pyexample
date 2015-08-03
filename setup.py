@@ -31,9 +31,8 @@ setup(
         # If any package contains *.txt or *.rst files, include them:
         #'': ['*.txt', '*.rst'],
         # And include any *.msg files found in the 'hello' package, too:
-        'pyexample-resources': ['*'],
-	'pyexample/resources': ['*'],
-	'pyexample': ['*.md', '*.dat']
+        #'pyexample-resources': ['*'],
+	'pyexample/resources': ['*']
     },
     # Global data files installed into sys.prefix 
     # On Fedora 22 path is /usr and that sucks...
