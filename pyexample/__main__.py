@@ -4,6 +4,7 @@
 import sys
 from os import path
 from pyexample.hello import Hello
+from pyexample import __version__
 
 __dir__ = path.realpath(path.dirname(__file__))
 __resource__ = path.join(__dir__, 'resources')
@@ -24,6 +25,8 @@ def main():
 	print("Greating from __main__ func")
 
 	use_hello_module()
+
+	print("Version: %s" % __version__)
 
 
 if __name__ == "__main__":
