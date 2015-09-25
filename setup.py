@@ -39,7 +39,7 @@ setup(
 		# If any package contains *.txt or *.rst files, include them:
 		# '': ['*.txt', '*.rst'],
 		# And include any *.msg files found in the 'hello' package, too:
-		'pyexample': ['resources/*', 'resources/dir/resource3.dat']
+		'pyexample': ['resources/*.ini', 'resources/*.dat', 'resources/dir/resource3.dat']
 	},
 
 	# test_suite = test.test_hello,
