@@ -8,17 +8,44 @@ __resource__ = path.join(__dir__, 'resources')
 
 
 class Hello:
+	"""
+	Example class
+	"""
 
-    def say_hello(self):
-        return "Greating from %s class" % __class__.__name__
+	@staticmethod
+	def say_hello():
+		"""
+		Basic greating from class
+		"""
+		return "Greating from %s class" % __class__.__name__
 
-    def say_long(self):
-        file = path.join(__resource__, 'resource1.dat')
-        with open(file) as f:
-            print(f.read())
+	@staticmethod
+	def say_long():
+		"""
+		Iterate throw resource and print resource to the stdout
+		"""
+		for file in ['resource1.dat', 'resource2.dat', path.join('dir', 'resource3.dat')]:
+			fullpath = path.join(__resource__, file)
+			with open(fullpath) as f:
+				print(f.read().strip('\n'))
+
+	@staticmethod
+	def find_config():
+		"""
+		Find config dir
+		"""
+		config_found = False
+		con = 'config.ini'
+		for filename in [con, path.join(__resource__, con)]:
+			if path.exists(filename):
+				print("Config found: ", filename)
+				config_found = True
+
+		if not config_found:
+			raise Exception()
 
 
 if __name__ == '__main__':
-    h = Hello()
-    print('Run modul hello')
-    print(h.say_hello())
+	h = Hello()
+	print('Run modul hello')
+	print(h.say_hello())

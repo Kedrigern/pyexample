@@ -5,7 +5,7 @@ from os import path
 from setuptools import (setup, find_packages)
 from pyexample import __doc__, __author__, __version__, __license__, __email__
 
-# Get the long description from the relevant file
+# Get the long description from the relevant dir
 here = path.abspath(path.dirname(__file__))
 filepath = path.join(here, 'DESCRIPTION.rst')
 with open(filepath, encoding='utf8') as f:
@@ -39,7 +39,7 @@ setup(
 		# If any package contains *.txt or *.rst files, include them:
 		# '': ['*.txt', '*.rst'],
 		# And include any *.msg files found in the 'hello' package, too:
-		'pyexample': ['resources/*']
+		'pyexample': ['resources/*', 'resources/dir/*']
 	},
 
 	# test_suite = test.test_hello,
