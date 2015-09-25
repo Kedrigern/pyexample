@@ -18,6 +18,12 @@ sudo pip3 install git+https://github.com/Kedrigern/pyexample.git
 
 `dnf` is install software for Fedora. On other OS use another app. 
 
+After git url you can specify tag:
+
+```
+sudo pip3 install git+https://github.com/Kedrigern/pyexample.git@v0.4.0
+```
+
 ## Run
 
 ```

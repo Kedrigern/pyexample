@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
 
 from os import path
 
@@ -7,8 +8,9 @@ __resource__ = path.join(__dir__, 'resources')
 
 
 class Hello:
+
     def say_hello(self):
-        return ("Greating from %s class" % __class__.__name__)
+        return "Greating from %s class" % __class__.__name__
 
     def say_long(self):
         file = path.join(__resource__, 'resource1.dat')

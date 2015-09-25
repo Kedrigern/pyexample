@@ -5,7 +5,6 @@ import sys
 from os import path
 from pyexample.hello import Hello
 
-__author__ = ['Onřej Profant']
 __dir__ = path.realpath(path.dirname(__file__))
 __resource__ = path.join(__dir__, 'resources')
 

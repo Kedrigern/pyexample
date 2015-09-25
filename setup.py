@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 from os import path
 from setuptools import (setup, find_packages)
-
+from pyexample import __doc__, __author__, __version__, __license__, __email__
 
 # Get the long description from the relevant file
 here = path.abspath(path.dirname(__file__))
@@ -13,7 +14,7 @@ with open(filepath, encoding='utf8') as f:
 setup(
 	# Basic
 	name='pyexample',
-	version='0.3.0',
+	version=__version__,
 	packages=find_packages(),
 
 	# Requirements
@@ -44,11 +45,11 @@ setup(
 	# test_suite = test.test_hello,
 
 	# About
-	author='Ondřej Profant',
-	author_email='ondrej.profant@gmal.com',
+	author=str(__author__),
+	author_email=__email__,
 	description='Python example project',
-	long_description=long_description,
-	license='Affero GNU-GPL v3',
+	long_description=__doc__,
+	license=__license__,
 	keywords="python3 example",
 	url='https://github.com/kedrigern/pyexample',
 	classifiers=[
