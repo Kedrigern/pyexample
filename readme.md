@@ -84,11 +84,14 @@ File hierarchy
 │   ├── __main__.py
 │   └── resources
 │       ├── config.ini
+│       ├── dir
+│       │   └── resource3.dat
 │       ├── __init__.py
 │       ├── resource1.dat
 │       └── resource2.dat
 ├── readme.md
 ├── run
+├── setup.cfg
 ├── setup.py
 └── test
     ├── __init__.py
