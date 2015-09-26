@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import locale
 from os import path
 from setuptools import (setup, find_packages)
 from pyexample import __doc__, __author__, __version__, __license__, __email__
+
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 # Get the long description from the relevant dir
 here = path.abspath(path.dirname(__file__))

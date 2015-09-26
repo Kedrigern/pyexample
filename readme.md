@@ -1,4 +1,5 @@
-# PyExample
+PyExample
+=========
 
 Python example project. Example of:
 
@@ -9,7 +10,8 @@ Python example project. Example of:
 * unit tests via standard `unittest` module
 
 
-## Install
+Install
+-------
 
 ```
 sudo dnf install pip3
@@ -24,7 +26,8 @@ After git url you can specify tag:
 sudo pip3 install git+https://github.com/Kedrigern/pyexample.git@v0.4.0
 ```
 
-## Run
+Run
+---
 
 ```
 pyexample
@@ -36,21 +39,41 @@ With any parameter output is quit different:
 pyexample --foo
 ```
 
-## Run tests
+Run tests
+---------
 
 ```
 cd <git-repository-with-project>
 python3 -m unittest
 ```
 
-## Links
+Create OS packages
+------------------
+
+If `pip` is not enough, you can create distribution packages.
+
+### RPM
+
+```
+./setup.py bdist_rpm
+```
+### DEB
+
+```
+./setup.py --command-packages=stdeb.command bdist_deb
+```
+
+
+Links
+-----
 
 * [pypa/sampleproject](http://github.com/pypa/sampleproject)
 * [doc manifest](https://docs.python.org/3.4/distutils/sourcedist.html#specifying-the-files-to-distribute)
 * [doc additional files](https://docs.python.org/3.4/distutils/setupscript.html#installing-additional-files)
 * [Including non-Python files with setup.py](http://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py)
 
-## File hiearchy
+File hierarchy
+--------------
 
 ```
 ├── DESCRIPTION.rst
