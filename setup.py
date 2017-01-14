@@ -14,6 +14,10 @@ filepath = path.join(here, 'DESCRIPTION.rst')
 with open(filepath, encoding='utf8') as f:
 	long_description = f.read()
 
+# Requirements from requirements.txt
+REQUIREMENTS = [i.strip() for i in open("requirements.txt").readlines()]
+
+
 setup(
 	# Basic
 	name='pyexample',
@@ -21,7 +25,7 @@ setup(
 	packages=find_packages(),
 
 	# Requirements
-	install_requires=[],
+	install_requires=REQUIREMENTS,
 	extras_require={
 		'dev': ['check-manifest'],
 		'test': ['coverage'],

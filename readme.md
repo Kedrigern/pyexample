@@ -6,6 +6,7 @@ Python example project. Example of:
 * Entry point (`app.py`)
 * module (`pyexample`)
 * module with resources (`pyexample/resources`)
+* dependencies via `requirements.txt` (used in `setup.py`)
 * setuptools (`setup.py`, `MANIFEST.in`)
 * unit tests via standard `unittest` module
 
@@ -18,7 +19,7 @@ sudo dnf install pip3
 sudo pip3 install git+https://github.com/Kedrigern/pyexample.git
 ```
 
-`dnf` is install software for Fedora. On other OS use another app. 
+`dnf` is install software for Fedora. On other OS use another app.
 
 After git url you can specify tag:
 
