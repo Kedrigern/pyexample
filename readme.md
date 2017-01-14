@@ -91,6 +91,7 @@ File hierarchy
 │       ├── resource1.dat
 │       └── resource2.dat
 ├── readme.md
+├── requirements.txt
 ├── run
 ├── setup.cfg
 ├── setup.py
