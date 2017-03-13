@@ -1,5 +1,6 @@
-PyExample
-=========
+# PyExample
+
+[![Build Status](https://travis-ci.org/Kedrigern/pyexample.svg?branch=master)](https://travis-ci.org/Kedrigern/pyexample)
 
 Python example project. Example of:
 
@@ -9,10 +10,9 @@ Python example project. Example of:
 * dependencies via `requirements.txt` (used in `setup.py`)
 * setuptools (`setup.py`, `MANIFEST.in`)
 * unit tests via standard `unittest` module
+* continuous integration via Travis CI
 
-
-Install
--------
+## Install
 
 ```
 sudo dnf install pip3
@@ -27,8 +27,7 @@ After git url you can specify tag:
 sudo pip3 install git+https://github.com/Kedrigern/pyexample.git@v0.4.0
 ```
 
-Run
----
+## Run
 
 ```
 pyexample
@@ -40,16 +39,14 @@ With any parameter output is quit different:
 pyexample --foo
 ```
 
-Run tests
----------
+## Run tests
 
 ```
 cd <git-repository-with-project>
 python3 -m unittest
 ```
 
-Create OS packages
-------------------
+## Create OS packages
 
 If `pip` is not enough, you can create distribution packages.
 
@@ -65,16 +62,14 @@ If `pip` is not enough, you can create distribution packages.
 ```
 
 
-Links
------
+## Links
 
 * [pypa/sampleproject](http://github.com/pypa/sampleproject)
 * [doc manifest](https://docs.python.org/3.4/distutils/sourcedist.html#specifying-the-files-to-distribute)
 * [doc additional files](https://docs.python.org/3.4/distutils/setupscript.html#installing-additional-files)
 * [Including non-Python files with setup.py](http://stackoverflow.com/questions/1612733/including-non-python-files-with-setup-py)
 
-File hierarchy
---------------
+## File hierarchy
 
 ```
 ├── DESCRIPTION.rst
