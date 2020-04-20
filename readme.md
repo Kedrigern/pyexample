@@ -14,7 +14,7 @@ Python example project. Example of:
 
 ## Install
 
-```
+```bash
 sudo dnf install pip3
 sudo pip3 install git+https://github.com/Kedrigern/pyexample.git
 ```
@@ -23,25 +23,25 @@ sudo pip3 install git+https://github.com/Kedrigern/pyexample.git
 
 After git url you can specify tag:
 
-```
+```bash
 sudo pip3 install git+https://github.com/Kedrigern/pyexample.git@v0.4.0
 ```
 
 ## Run
 
-```
+```bash
 pyexample
 ```
 
 With any parameter output is quit different:
 
-```
+```bash
 pyexample --foo
 ```
 
 ## Run tests
 
-```
+```bash
 cd <git-repository-with-project>
 python3 -m unittest
 ```
@@ -52,12 +52,13 @@ If `pip` is not enough, you can create distribution packages.
 
 ### RPM
 
-```
+```bash
 ./setup.py bdist_rpm
 ```
+
 ### DEB
 
-```
+```bash
 ./setup.py --command-packages=stdeb.command bdist_deb
 ```
 
@@ -71,7 +72,7 @@ If `pip` is not enough, you can create distribution packages.
 
 ## File hierarchy
 
-```
+```txt
 ├── DESCRIPTION.rst
 ├── MANIFEST.in
 ├── pyexample

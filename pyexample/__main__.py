@@ -17,8 +17,8 @@ def use_hello_module():
 	h.find_config()
 
 	if len(sys.argv) > 1:
-		print("Text from resource1.dat:")
-		h.say_long()
+		print("Text from resources files:")
+		print(h.say_long())
 
 
 def main():

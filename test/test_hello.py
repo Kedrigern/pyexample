@@ -12,6 +12,12 @@ class MainTest(unittest.TestCase):
 		expected = "Greating from Hello class" 
 		self.assertEqual(returned, expected)	
 
+	def test2(self):
+		h = Hello()
+		returned = h.say_long()
+		contains = ["pyexample resource1", "pyexample resource2", "pyexample resource3"]
+		for c in contains:
+			self.assertIn(c, returned)
 
 if __name__ == '__main__':
 	unittest.main()
